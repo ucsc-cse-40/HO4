@@ -45,9 +45,9 @@ class T1A(autograder.question.Question):
 
 class T1B(autograder.question.Question):
     def score_question(self, submission):
-        data = pandas.DataFrame({
+        data = {
             'a': [1, 2, 3],
-        })
+        }
 
         result = submission.__all__.split_dict_data(data, 0.5)
         if (self.check_not_implemented(result)):
